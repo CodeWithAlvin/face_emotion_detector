@@ -3,7 +3,7 @@ import cv2
 
 emotion_dict = {0: "Angry", 1: "Disgust", 2: "Fear", 3: "Happy", 4: "Sad", 5: "Surprise", 6: "Neutral"}
 
-with open("model.pkl","rb") as f:
+with open("model_random.pkl","rb") as f:
     model=pickle.load(f)
 
 video=cv2.VideoCapture(0)
