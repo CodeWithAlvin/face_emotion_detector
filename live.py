@@ -16,7 +16,7 @@ video=cv2.VideoCapture(0)
 while True:
     _,f=video.read()
     transform=cv2.cvtColor(cv2.resize(f,(48,48)),cv2.COLOR_BGR2GRAY).reshape(-1,48,48,1)
-    res=model.predict([transform])
+    res=model.predict([transform/255])
     cv2.putText(f,emotion_dict[np.argmax(res)],(25, 20),cv2.FONT_HERSHEY_SIMPLEX,1,(255, 0, 0),2)
     cv2.imshow("Emotion Detection",f)
     cv2.waitKey(1)
