@@ -6,5 +6,5 @@ ml model to detect facial expresion
 
 data source:https://www.kaggle.com/deadskull7/fer2013
 
-CNN_model --> test_accuracy ==> 60.8%
+CNN+LSTN_model --> test_accuracy ==> 60.8%
 
