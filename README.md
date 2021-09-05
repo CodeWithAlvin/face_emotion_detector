@@ -6,5 +6,5 @@ ml model to detect facial expresion
 
 data source:https://www.kaggle.com/deadskull7/fer2013
 
-5CNN+5LSTM_model with sklean scaler --> test_accuracy ==> 58.0%
+4CNN+4LSTM+2Dense_model scaler --> test_accuracy ==> 58.0%
 
