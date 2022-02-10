@@ -22,7 +22,7 @@ def adjusted_detect_face(img):
 emotion_dict = {0: "Angry", 1: "Disgust", 2: "Fear", 3: "Happy", 4: "Sad", 5: "Surprise", 6: "Neutral"}
 
 print("loading model ")
-model=keras.models.load_model("4CNN,4LSTM,2DENSE model.h5")
+model=keras.models.load_model("models/4CNN,4LSTM,2DENSE model.h5")
 print("model loaded")
 
 def predict(img):
